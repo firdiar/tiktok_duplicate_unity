@@ -2,6 +2,7 @@ using DG.Tweening;
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using System.Threading.Tasks;
 using TMPro;
 using UnityEngine;
@@ -12,9 +13,6 @@ namespace Gtion.UI
     public class DescriptionBar : AContentItemHolder
     {
         const string Ellipsis = " ...";
-
-        [SerializeField]
-        Button seeMoreBtn;
         bool isExpand = false;
 
         [Header("Basic")]
@@ -48,6 +46,21 @@ namespace Gtion.UI
         RectTransform fullDescRect;
         [SerializeField]
         int fullHeight = 900;
+
+        [Header("Extra")]
+        [SerializeField]
+        List<Graphic> additionalGraphic = new List<Graphic>();
+
+        public override List<Graphic> GetAllGraphic()
+        {
+            List<Graphic> result = additionalGraphic.ToList();
+            result.Add(username);
+            result.Add(song);
+            result.Add(expandText);
+            result.Add(shortDesc);
+            result.Add(fullDesc);
+            return result;
+        }
 
         private void Start()
         {
@@ -116,12 +129,5 @@ namespace Gtion.UI
             }
             
         }
-
-        public override List<Graphic> GetAllGraphic()
-        {
-            throw new System.NotImplementedException();
-        }
-
-
     }
 }

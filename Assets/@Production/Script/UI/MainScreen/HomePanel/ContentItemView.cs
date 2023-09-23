@@ -61,6 +61,7 @@ namespace Gtion.UI
             doubleTapListener.OnDoubleTap.AddListener(OnDoubleTap);
 
             Initialize(contentData);
+            SetAlpha(0.5f);
         }
 
         private void OnDoubleTap() 
@@ -73,8 +74,19 @@ namespace Gtion.UI
             like.LikeChange();
         }
 
+        public void SetAlpha(float alpha)
+        { 
+            descriptionBar.SetAlpha(alpha);
+            profile.SetAlpha(alpha);
+            like.SetAlpha(alpha);
+            comment.SetAlpha(alpha);
+            share.SetAlpha(alpha);
+            song.SetAlpha(alpha);
+        }
+
         public void Initialize(ContentData data)
         {
+            contentHolder.sprite = data.contentImage;
             descriptionBar.Initialize(data);
             profile.Initialize(data.profileIcon, () => Debug.Log($"Opening Profile : {data.username}"));
             like.Initialize(data.likes, false, (isLiked) => Debug.Log($"Like content : {(isLiked)}"));

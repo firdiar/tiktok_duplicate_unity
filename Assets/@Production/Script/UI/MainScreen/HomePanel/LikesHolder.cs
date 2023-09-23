@@ -15,8 +15,10 @@ namespace Gtion.UI
 
         Transform likeIconTransform => likeIcon.transform;
 
+        private long amount;
         private bool isLiked;
         public bool IsLiked => isLiked;
+        Action<bool> onClick;
 
         public void Initialize(long amount, bool isLiked, Action<bool> onClick)
         {
@@ -29,6 +31,13 @@ namespace Gtion.UI
             col.a = isLiked ? 1 : 0;
             likeIcon.color = col;
 
+            this.amount = amount;
+            this.onClick = onClick;
+            Init(amount);
+        }
+
+        private void Init(long amount)
+        {
             Initialize(amount, () =>
             {
                 LikeChange();
@@ -49,6 +58,8 @@ namespace Gtion.UI
                 likeIconTransform.DOScale(0, 0.25f);
                 likeIcon.DOFade(0, 0.2f);
             }
+
+            Init(amount + (isLiked ? 1 : 0));
         }
 
         public override List<Graphic> GetAllGraphic()

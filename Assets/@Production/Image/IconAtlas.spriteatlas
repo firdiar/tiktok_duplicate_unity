@@ -1,0 +1,100 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: IconAtlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 8
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 1
+      enableAlphaDilation: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 2800000, guid: 802cd0295b70da74da8fe467a6249823, type: 3}
+    - {fileID: 2800000, guid: d7d7931ee352c124db93bff09bddaada, type: 3}
+    - {fileID: 2800000, guid: 5560206500d500045a3783470205279f, type: 3}
+    - {fileID: 2800000, guid: 0fbd6764ce8de9b4a97adf1aeed0fba4, type: 3}
+    - {fileID: 2800000, guid: 56fb70dfbf44d9940a6431f8aa9bb34c, type: 3}
+    - {fileID: 2800000, guid: 021b4c86843dd3e4b8d19799af76bcc7, type: 3}
+    - {fileID: 2800000, guid: a6d2d68678076dc4fa419557c3cecfd5, type: 3}
+    - {fileID: 2800000, guid: 104e7331953ebc44991d0f8681e56f78, type: 3}
+    - {fileID: 2800000, guid: e9243eca35ea8a542adf18698724a52e, type: 3}
+    - {fileID: 2800000, guid: 58ae3b7bd378ed746918d3136af291c6, type: 3}
+    - {fileID: 2800000, guid: 6386fc376299d1642a20d7bde7c29cd2, type: 3}
+    - {fileID: 2800000, guid: 46b6da768406ded418d56131a852e858, type: 3}
+    - {fileID: 2800000, guid: 057e5096f07647b4eb7fce3a4e1a3299, type: 3}
+    - {fileID: 2800000, guid: 9868e4c251495c141a6a47e6add41aa3, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+    packedSpriteRenderDataKeys:
+    - 104e7331953ebc44991d0f8681e56f78: 21300000
+    - 9868e4c251495c141a6a47e6add41aa3: 21300000
+    - 0fbd6764ce8de9b4a97adf1aeed0fba4: 21300000
+    - 5560206500d500045a3783470205279f: 21300000
+    - 46b6da768406ded418d56131a852e858: 21300000
+    - a6d2d68678076dc4fa419557c3cecfd5: 21300000
+    - 021b4c86843dd3e4b8d19799af76bcc7: 21300000
+    - 057e5096f07647b4eb7fce3a4e1a3299: 21300000
+    - 6386fc376299d1642a20d7bde7c29cd2: 21300000
+    - 802cd0295b70da74da8fe467a6249823: 21300000
+    - e9243eca35ea8a542adf18698724a52e: 21300000
+    - 58ae3b7bd378ed746918d3136af291c6: 21300000
+    - d7d7931ee352c124db93bff09bddaada: 21300000
+    - 56fb70dfbf44d9940a6431f8aa9bb34c: 21300000
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 104e7331953ebc44991d0f8681e56f78, type: 3}
+  - {fileID: 21300000, guid: 9868e4c251495c141a6a47e6add41aa3, type: 3}
+  - {fileID: 21300000, guid: 0fbd6764ce8de9b4a97adf1aeed0fba4, type: 3}
+  - {fileID: 21300000, guid: 5560206500d500045a3783470205279f, type: 3}
+  - {fileID: 21300000, guid: 46b6da768406ded418d56131a852e858, type: 3}
+  - {fileID: 21300000, guid: a6d2d68678076dc4fa419557c3cecfd5, type: 3}
+  - {fileID: 21300000, guid: 021b4c86843dd3e4b8d19799af76bcc7, type: 3}
+  - {fileID: 21300000, guid: 057e5096f07647b4eb7fce3a4e1a3299, type: 3}
+  - {fileID: 21300000, guid: 6386fc376299d1642a20d7bde7c29cd2, type: 3}
+  - {fileID: 21300000, guid: 802cd0295b70da74da8fe467a6249823, type: 3}
+  - {fileID: 21300000, guid: e9243eca35ea8a542adf18698724a52e, type: 3}
+  - {fileID: 21300000, guid: 58ae3b7bd378ed746918d3136af291c6, type: 3}
+  - {fileID: 21300000, guid: d7d7931ee352c124db93bff09bddaada, type: 3}
+  - {fileID: 21300000, guid: 56fb70dfbf44d9940a6431f8aa9bb34c, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - MusicIcon
+  - Circle
+  - IconNewBlack
+  - IconNew
+  - IconAccount
+  - MessageIcon
+  - LoveIcon
+  - GradientToDown
+  - White
+  - IconHome
+  - PlusIcon
+  - ShareIcon
+  - IconInbox
+  - IconSearch
+  m_RenderDataMap: {}
+  m_Tag: IconAtlas
+  m_IsVariant: 0
